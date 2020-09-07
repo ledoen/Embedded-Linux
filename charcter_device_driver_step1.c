@@ -79,7 +79,7 @@ MODULE_LICESENSE("GPL");
 //第八步，编译加载模块
     //Makefile 文件内容如下：
 obj-m += ledoendev.o
-KERDIR = 
+KERDIR = /lib/modules/$(shell uname -r)/build
 PWD=$(shell pwd)
 
 modules:
